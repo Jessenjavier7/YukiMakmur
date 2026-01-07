@@ -1,0 +1,10 @@
+body {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  overflow: auto;
+}

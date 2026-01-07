@@ -1,0 +1,65 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 17%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar > * {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 6.95%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sidebar > *:hover {
+  background-color: burlywood;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar #logo {
+  color: white;
+  min-width: 90%;
+  min-height: 10%;
+  /* background-image: url("../images/logomamat.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active {
+  background-color: burlywood;
+}
+
+@media only screen and (max-width: 820px) {
+  .sidebar {
+    height: 100%;
+    max-width: 70px !important;
+  }
+  .sidebar > * {
+    font-size: 10px !important;
+    /* background-color: yellow; */
+  }
+
+  .sidebar > a > img,
+  .sidebar > a > .gambar {
+    display: none;
+  }
+}
